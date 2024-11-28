@@ -1,0 +1,100 @@
+@media (min-width: 1101px) {
+    body {
+        .feedback-hidden,
+        .order-call-hidden {
+            display: none;
+        }
+
+        .main {
+            position: relative;
+            margin-left: 320px;
+            max-width: 1800px;
+
+            .slider-dots-list,
+            .prise-list-mobile,
+            .swiper-pagination,
+            .hidden-desktop {
+                display: none;
+            }
+        }
+
+        .header {
+            display: none;
+        }
+
+        .section-about {
+            display: flex;
+
+            .main__section--image-cps-logo {
+                border-radius: 5px;
+                min-width: 450px;
+                max-width: 550px;
+                height: 100%;
+                align-self: center;
+            }
+        }
+
+        .wrapper-title-repair-status {
+            display: flex;
+            justify-content: space-between;
+
+            .list-service__wrapper {
+                display: flex;
+                padding-top: 24px;
+                gap: $padding-gap;
+                padding-right: $padding-gap;
+
+                .list-service__item a {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    p {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .main__nav--list {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .slider-brands {
+            flex-wrap: wrap;
+        }
+
+        .slider-appliances {
+            flex-wrap: wrap;
+        }
+
+        .footer__list {
+            flex-direction: row;
+            justify-content: space-around;
+
+            .footer__list--item {
+                width: 33%;
+                align-self: center;
+
+                &:first-child p {
+                    text-align: left;
+                }
+
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+
+        .menu {
+            position: fixed;
+            left: 0;
+            box-shadow: none;
+
+            .menu__header--button-close {
+                display: none;
+            }
+        }
+    }
+}

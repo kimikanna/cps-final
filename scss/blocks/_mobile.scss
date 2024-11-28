@@ -1,0 +1,69 @@
+@media (max-width: 500px) {
+    body {
+        .section-price__other,
+        .nav-list-wrapper,
+        .about-tablet,
+        .about-desktop,
+        .button-show-mobile,
+        .list-service__wrapper {
+            display: none;
+        }
+
+        .title-service {
+            margin-top: 28px;
+        }
+
+        .menu {
+            position: fixed;
+            z-index: 2;
+        }
+
+        .feedback,
+        .order-call,
+        .menu {
+            width: 100%;
+
+            .button-close-modal {
+                left: 30px;
+                top: 24px;
+            }
+
+            .order-call__title,
+            .feedback__title {
+                margin-top: 34px;
+            }
+        }
+
+        .section-price__info {
+            margin-top: 25px;
+        }
+
+        .section-price__wrapper {
+            .swiper-pagination-bullets {
+                bottom: -20px;
+            }
+        }
+    }
+
+    .header {
+        .header__nav {
+            .nav-list {
+                .nav-list-wrapper__call-chat-profile {
+                    display: none;
+                }
+
+                .nav-list__item {
+                    .nav-list__item--link-logo::after {
+                        content: "";
+                        border: 1px solid #eaeaea;
+                        border-radius: 1px;
+                        margin-left: $padding-gap;
+                        height: 32px;
+                        position: absolute;
+                        top: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

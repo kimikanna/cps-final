@@ -1,0 +1,21 @@
+$font-phone_lang: 24px;
+$font-header: 28px;
+$font-menu: 16px;
+$font-all-text: 14px;
+$font-color-active: #7e7e82;
+$font-color-all: #1b1c21;
+$background-header: #ffffff;
+$background-body: #f8f8f8;
+$padding-gap: 16px;
+$color-border-slider1: #d9fff5;
+$color-border-slider2: #eaeaea;
+$color-border-active: #b8ffec;
+$color-befor-element: #41f6d7;
+$color-slider-dots: #dddddd;
+$color-slider-dots-active: #b5b6bc;
+$color-button: #ff3e79;
+
+%flex-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}

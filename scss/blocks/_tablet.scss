@@ -1,0 +1,117 @@
+@media (min-width: 501px) and (max-width: 1100px) {
+    body {
+        .footer__list {
+            flex-direction: row;
+            justify-content: space-around;
+
+            .footer__list--item {
+                width: 33%;
+                align-self: center;
+
+                &:first-child p {
+                    text-align: left;
+                }
+
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+
+        .header {
+            .header__nav {
+                .nav-list {
+                    .nav-list-wrapper-menu-logo {
+                        gap: 36px;
+                    }
+
+                    .nav-list__item--link-logo::before {
+                        content: "";
+                        border: 1px solid #eaeaea;
+                        border-radius: 1px;
+                        margin-left: $padding-gap;
+                        height: 32px;
+                        position: absolute;
+                        top: 14px;
+                        left: -35px;
+                    }
+
+                    .nav-list-wrapper__call-chat-profile::after {
+                        content: "";
+                        border: 1px solid #eaeaea;
+                        border-radius: 1px;
+                        height: 32px;
+                        position: absolute;
+                        top: 4px;
+                        right: 110px;
+                    }
+                }
+            }
+        }
+
+        .main {
+            .list-service__wrapper,
+            .about-desktop,
+            .slider-dots-list,
+            .prise-list-mobile,
+            .hidden-tablet,
+            .hidden-desktop,
+            .swiper-pagination {
+                display: none;
+            }
+        }
+
+        .slider-appliances {
+            flex-wrap: wrap;
+        }
+
+        .menu {
+            left: -320px;
+            position: fixed;
+            z-index: 2;
+        }
+
+        .menu-animation-open {
+            box-shadow: 5px 0 50px 1px gray;
+            left: 0;
+            transition-duration: 400ms;
+        }
+
+        .menu-animation-close {
+            box-shadow: 0;
+            left: -320px;
+            transition-duration: 400ms;
+        }
+    }
+
+    .section-about {
+        display: flex;
+
+        .main__section--image-cps-logo {
+            border-radius: 5px;
+            min-width: 350px;
+            max-width: 430px;
+            height: 100%;
+            align-self: center;
+        }
+
+        .nav-list__item--link-logo::after {
+            content: "";
+            border: 1px solid #eaeaea;
+            border-radius: 1px;
+            height: 32px;
+            position: absolute;
+            top: 14px;
+        }
+    }
+
+    .section-repair {
+        min-width: 0;
+
+        .slider-brands {
+            flex-wrap: wrap;
+            min-width: 0;
+            position: relative;
+        }
+    }
+}
